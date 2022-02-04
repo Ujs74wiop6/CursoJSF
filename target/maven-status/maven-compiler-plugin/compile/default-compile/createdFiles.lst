@@ -1,2 +1,5 @@
+com\mycompany\maratonajsf\model\enums\Turno.class
+com\mycompany\maratonajsf\bean\estudante\EstudanteRegistrarBean.class
+com\mycompany\maratonajsf\model\Estudante.class
 com\mycompany\maratonajsf\resources\JavaEE8Resource.class
 com\mycompany\maratonajsf\JAXRSConfiguration.class
