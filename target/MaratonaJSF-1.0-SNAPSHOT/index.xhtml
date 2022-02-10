@@ -4,11 +4,13 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
       xmlns:p="http://primefaces.org/ui" >
     <h:head>
 
     </h:head>
     <h:body>
+        <c:set var="numerosList" value="#{[1,2,3,4,5,6,7,8,9,10]}"/>
         <p:importEnum type="com.mycompany.maratonajsf.model.enums.Turno" 
                       var="Turno" allSuffix="ALL_ENUM_VALUES"/>
         <!--        <h:outputLabel value="Teste"/><br/>
@@ -116,6 +118,7 @@
                         </ui:fragment>
                     </h:panelGroup>
                 </h:form>-->
+
         <!-- Lambidas -->
         #{(soma -> soma + num)(10)}<br/>
         #{((v1, v2, v3) ->v1*v2*v3) (1,5,10)}<br/>
@@ -131,17 +134,27 @@
         </ui:repeat>
         <br/>
         <!--Set-->
-        <ui:repeat value="#{{'DevDojo','e','foda','foda'}}" var="fodeza">
+        <ui:repeat value="#{{'DevDojo','É','Foda','Foda'}}" var="fodeza">
             #{fodeza}
         </ui:repeat>
         <br/>
         <!--Map-->
-<!--        <ui:repeat value="#{{'Melhor Lugar' : 'DevDojo','Melhor Curso' : 'Maratonas'}}" 
+        <ui:repeat value="#{{'Melhor Lugar':'DevDojo','Melhor Curso':' Maratonas'}}"
                    var="fodezaMap">
-            <ui:repeat value="#{fodezaMap.entrySet().toArray}" var="entry">
+            <ui:repeat value="#{fodezaMap}" var="entry">
                 #{entry.key} - #{entry.value}
             </ui:repeat>
-        </ui:repeat>-->
+        </ui:repeat>
+        <br/>
+        <ui:repeat value="#{numerosList.stream().filter(v-> v>5)
+                            .toList()}"
+                   var="result">
+            #{result}
+        </ui:repeat>
+        <br/>
+        #{numerosList.stream().average().get()}<br/>
+        #{numerosList.stream().sum()}<br/>
+        #{numerosList.stream().filter(v-> v>5).sum()}
     </h:body>
     <script type="text/javascript">
         function fazMagica(magica) {
