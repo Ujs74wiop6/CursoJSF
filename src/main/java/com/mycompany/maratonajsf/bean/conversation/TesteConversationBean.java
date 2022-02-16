@@ -18,7 +18,8 @@ import javax.inject.Named;
  */
 @Named
 @ConversationScoped
-//Transient
+// Transient --> como uma espera
+// Vinculado com a sessão (se não for finalizado, ele ficará vivo até a sessão ser encerrada)
 public class TesteConversationBean implements Serializable {
 
     private List<String> personagens;
@@ -72,5 +73,4 @@ public class TesteConversationBean implements Serializable {
     public void setConversation(Conversation conversation) {
         this.conversation = conversation;
     }
-
 }

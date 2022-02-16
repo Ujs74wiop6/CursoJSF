@@ -2,9 +2,14 @@ C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\session\TesteSessionBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\aplication\TesteApplicationBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\conversation\TesteConversationBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\flowbuilder\TesteFlowBuilderNestedBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\flow\TesteFlowNestedBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\model\Estudante.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\flowbuilder\TesteFlowBuilderBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\flowbuilder\NewRegistrationFlowBuilder.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\view\TesteViewBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\model\enums\Turno.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\resources\JavaEE8Resource.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\request\TesteRequestBean.java
-C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\model\Estudante.java
-C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\view\TesteViewBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\flow\TesteFlowBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\JAXRSConfiguration.java
-C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\model\enums\Turno.java
