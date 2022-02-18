@@ -22,6 +22,7 @@ public class TesteFlowBean implements Serializable {
         System.out.println(sobrenome);
         System.out.println(endereco);
 //        return "exitToInicio";
+//        return "exitToIndex";
     }
 
     public String getNome() {

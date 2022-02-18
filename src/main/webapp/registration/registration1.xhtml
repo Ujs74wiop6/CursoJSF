@@ -4,23 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Resgistration-1</title>
+        <h:body>
+            <h:messages/>
+            <h:form>
+                <h2>Primeira pagina de registro FlowScoped</h2>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Nome"/>
+                    <h:inputText value="#{testeFlowBean.nome}"
+                                 required="true" requiredMessage="Nome obrigatorio"/>
+                    <h:outputLabel value="Sobrenome"/>
+                    <h:inputText value="#{testeFlowBean.sobrenome}"/>
+                    <h:commandButton value="Next" action="registrationPage2"/>
+                </h:panelGrid>
+            </h:form>
+        </h:body>
     </h:head>
-    <h:body>
-        <h:messages/>
-        <h:form>
-            <h2>Primeira página de registro FlowScoped</h2>
-
-            <h:panelGrid columns="2">
-                <h:outputLabel value="Nome"/>
-                <h:inputText value="#{testeFlowBean.nome}" 
-                             required="true" requiredMessage="Nome Obrigatório"/>
-                <h:outputLabel value="Sobrenome"/>
-                <h:inputText value="#{testeFlowBean.sobrenome}"/>
-            </h:panelGrid>
-
-            <h:commandButton value="Next" action="registrationPage2"/>
-        </h:form>
-
-    </h:body>
 </html>

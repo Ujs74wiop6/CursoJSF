@@ -1,10 +1,10 @@
 package com.mycompany.maratonajsf.bean.flow;
 
-import java.io.Serializable;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
+import java.io.Serializable;
 
 /**
  *

@@ -11,7 +11,7 @@ import javax.faces.flow.builder.FlowDefinition;
  *
  * @author Home
  */
-public class newPendencesFlowBuilder implements Serializable {
+public class NewPendencesFlowBuilder implements Serializable {
 
     @Produces
     @FlowDefinition
@@ -19,12 +19,12 @@ public class newPendencesFlowBuilder implements Serializable {
         String flowId = "newpendences";
         flowBuilder.id("", flowId);
         flowBuilder.viewNode(flowId, "/newpendences/newpendences.xhtml").markAsStartNode();
-        flowBuilder.returnNode("proceedToNewRegistration3")
+        flowBuilder.returnNode("procedToNewRegistration3")
                 .fromOutcome("/newregistration/newregistration3.xhtml");
         flowBuilder.returnNode("exitToNewInicio")
                 .fromOutcome("/newregistration/newregistration.xhtml");
         flowBuilder.inboundParameter("userName", "#{testeFlowBuilderNestedBean.userName}");
-        flowBuilder.inboundParameter("userName", "#{testeFlowBuilderNestedBean.userName}");
+        flowBuilder.inboundParameter("userSurname", "#{testeFlowBuilderNestedBean.userSurname}");
         return flowBuilder.getFlow();
     }
 }

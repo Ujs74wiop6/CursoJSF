@@ -1,6 +1,5 @@
 package com.mycompany.maratonajsf.bean.flowbuilder;
 
-import com.mycompany.maratonajsf.bean.flow.*;
 import java.io.Serializable;
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
@@ -12,7 +11,6 @@ import javax.inject.Named;
 @Named
 @FlowScoped(value = "newregistration")
 public class TesteFlowBuilderBean implements Serializable {
-
     private String nome;
     private String sobrenome;
     private String endereco;
@@ -23,6 +21,7 @@ public class TesteFlowBuilderBean implements Serializable {
         System.out.println(sobrenome);
         System.out.println(endereco);
 //        return "exitToInicio";
+//        return "exitToIndex";
     }
 
     public String getNome() {

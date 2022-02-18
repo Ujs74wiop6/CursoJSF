@@ -1,6 +1,5 @@
 package com.mycompany.maratonajsf.bean.flowbuilder;
 
-import com.mycompany.maratonajsf.bean.flow.*;
 import java.io.Serializable;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -23,13 +22,13 @@ public class TesteFlowBuilderNestedBean implements Serializable {
         System.out.println("Fazendo consulta no SPC");
         System.out.println("Pedindo a permissao de Deus");
         System.out.println("Sacrificando um bode");
-        if (true) {
-            FacesContext context = FacesContext.getCurrentInstance();
-            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
-                    "Usuario não passou nas pendencias", "Algum detalhe util"));
-            return null;
-        }
-        return "procedToRegistration3";
+//        if (true) {
+//            FacesContext context = FacesContext.getCurrentInstance();
+//            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
+//                    "Usuario não passou nas pendencias", "Algum detalhe util"));
+//            return null;
+//        }
+        return "procedToNewRegistration3";
     }
 
     public String getUserName() {

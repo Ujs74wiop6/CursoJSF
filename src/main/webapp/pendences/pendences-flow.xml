@@ -6,7 +6,7 @@
     http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd">
     
     <flow-definition id="pendences">
-        <flow-return id="procedToRegistration3">
+        <flow-return id="procedToNewRegistration3">
             <from-outcome>/registration/registration3</from-outcome>
         </flow-return>
         <inbound-parameter>

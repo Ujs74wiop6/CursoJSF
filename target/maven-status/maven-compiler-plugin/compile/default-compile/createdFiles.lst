@@ -3,6 +3,7 @@ com\mycompany\maratonajsf\bean\conversation\TesteConversationBean.class
 com\mycompany\maratonajsf\bean\aplication\TesteApplicationBean.class
 com\mycompany\maratonajsf\resources\JavaEE8Resource.class
 com\mycompany\maratonajsf\bean\flowbuilder\TesteFlowBuilderBean.class
+com\mycompany\maratonajsf\bean\dependent\TesteDependentBean.class
 com\mycompany\maratonajsf\bean\flow\TesteFlowNestedBean.class
 com\mycompany\maratonajsf\bean\session\TesteSessionBean.class
 com\mycompany\maratonajsf\model\enums\Turno.class
@@ -12,4 +13,5 @@ com\mycompany\maratonajsf\JAXRSConfiguration.class
 com\mycompany\maratonajsf\bean\request\TesteRequestBean.class
 com\mycompany\maratonajsf\bean\view\TesteViewBean.class
 com\mycompany\maratonajsf\model\Estudante.class
+com\mycompany\maratonajsf\flowbuilder\NewPendencesFlowBuilder.class
 com\mycompany\maratonajsf\bean\flow\TesteFlowBean.class
