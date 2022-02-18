@@ -1,5 +1,6 @@
 package com.mycompany.maratonajsf.bean.session;
 
+import com.mycompany.maratonajsf.model.Estudante;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,11 +22,18 @@ public class TesteSessionBean implements Serializable {
 
     private List<String> personagens;
     private List<String> personagensSelecionado = new ArrayList<>();
+    private Estudante estudante;
 
     @PostConstruct
     public void init() {
         System.out.println("Entrou no PostConstruct do SessionScoped ");
         personagens = Arrays.asList("Goku", "Vegete", "Gohan");
+        logar();
+    }
+
+    public void logar() {
+        //Faz a consulta, verificou se está OK
+        estudante = new Estudante();
     }
 
     public void selecionarPersonagem() {
@@ -39,6 +47,14 @@ public class TesteSessionBean implements Serializable {
         return "session?faces-redirect=true";
     }
 
+    public Estudante getEstudante() {
+        return estudante;
+    }
+
+    public void setEstudante(Estudante estudante) {
+        this.estudante = estudante;
+    }
+
     public List<String> getPersonagens() {
         return personagens;
     }
@@ -46,7 +62,7 @@ public class TesteSessionBean implements Serializable {
     public void setPersonagens(List<String> personagens) {
         this.personagens = personagens;
     }
-
+    
     public List<String> getPersonagensSelecionado() {
         return personagensSelecionado;
     }

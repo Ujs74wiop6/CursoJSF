@@ -19,11 +19,20 @@ public class TesteDependentBean implements Serializable {
 
     private List<String> personagens;
     private List<String> personagensSelecionado = new ArrayList<>();
+    private List<String> categoriasList = new ArrayList<>();
 
     @PostConstruct
     public void init() {
         System.out.println("Entrou no PostConstruct do @Dependent ");
         personagens = Arrays.asList("Naruto", "Hinata", "Yondaime");
+    }
+
+    public List<String> getCategoriasList() {
+        return categoriasList;
+    }
+
+    public void setCategoriasList(List<String> categoriasList) {
+        this.categoriasList = categoriasList;
     }
 
     public void selecionarPersonagem() {
