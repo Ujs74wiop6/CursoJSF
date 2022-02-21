@@ -56,5 +56,4 @@ public class ComunicacaoTeste1Bean implements Serializable {
     public void setData(Date data) {
         this.data = data;
     }
-
 }
