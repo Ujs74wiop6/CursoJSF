@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import javax.annotation.PostConstruct;
-import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 
@@ -19,15 +17,13 @@ public class ComunicacaoTeste3Bean implements Serializable {
 
     private String nome;
     private String sobrenome;
-    private String data;
-    private Date data2;
+    private Date data;
 
     public void init() throws ParseException {
 //        if (!FacesContext.getCurrentInstance().isPostback()) {
         System.out.println("criou comunicacao 3");
         System.out.println(nome);
         System.out.println(sobrenome);
-        data2 = new SimpleDateFormat("dd-MM-yyyy").parse(data);
 //        }
     }
 
@@ -52,19 +48,11 @@ public class ComunicacaoTeste3Bean implements Serializable {
         this.sobrenome = sobrenome;
     }
 
-    public String getData() {
+    public Date getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(Date data) {
         this.data = data;
-    }
-
-    public Date getData2() {
-        return data2;
-    }
-
-    public void setData2(Date data2) {
-        this.data2 = data2;
     }
 }
