@@ -11,6 +11,7 @@ com\mycompany\maratonajsf\JAXRSConfiguration.class
 com\mycompany\maratonajsf\bean\request\TesteRequestBean.class
 com\mycompany\maratonajsf\bean\view\TesteViewBean.class
 com\mycompany\maratonajsf\flowbuilder\NewPendencesFlowBuilder.class
+com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste5Bean.class
 com\mycompany\maratonajsf\bean\conversation\TesteConversationBean.class
 com\mycompany\maratonajsf\filter\LoginFilter.class
 com\mycompany\maratonajsf\resources\JavaEE8Resource.class
