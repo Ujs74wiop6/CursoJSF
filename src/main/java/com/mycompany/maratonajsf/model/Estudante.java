@@ -2,11 +2,18 @@ package com.mycompany.maratonajsf.model;
 
 import com.mycompany.maratonajsf.model.enums.Turno;
 
+import javax.persistence.Transient;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import static java.util.Arrays.asList;
+
 /**
  *
  * @author Home
  */
-public class Estudante {
+public class Estudante implements Serializable {
 
     private String nome = "Fabricio";
     private String sobrenome = "Tiago Arantes";
@@ -14,6 +21,26 @@ public class Estudante {
     private double nota2;
     private double nota3 = 10;
     private Turno turno = Turno.MATUTINO;
+
+    public Estudante() {
+
+    }
+
+    public Estudante(String nome, String sobrenome, double nota1) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.nota1 = nota1;
+    }
+
+    public static List<Estudante> estudantesList() {
+        return asList(new Estudante("Ikki", "Fenix", 10),
+                new Estudante("Shiryu", "Dragao", 10),
+                new Estudante("Seiya", "Pegasus", 10));
+    }
+
+    public Estudante(double nota2) {
+        this.nota2 = nota2;
+    }
 
     public String getNome() {
         return nome;

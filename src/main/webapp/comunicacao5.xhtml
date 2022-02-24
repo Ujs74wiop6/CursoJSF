@@ -16,7 +16,8 @@
                 <h:commandButton value="Property Action Listener" action="#{comunicacaoTeste5Bean.execute()}">
                     <f:setPropertyActionListener value="Fabricio" target="#{comunicacaoTeste5Bean.nome}"/>
                     <f:setPropertyActionListener value="Tiago" target="#{comunicacaoTeste5Bean.sobrenome}"/>
-                    <f:setPropertyActionListener value="#{comunicacaoTeste5Bean.estudante}" target="#{comunicacaoTeste5Bean.estudante2}"/>
+                    <f:setPropertyActionListener value="#{comunicacaoTeste5Bean.estudante}" 
+                                                 target="#{comunicacaoTeste5Bean.estudante2}"/>
                 </h:commandButton>
             </h:panelGrid>
         </o:form>

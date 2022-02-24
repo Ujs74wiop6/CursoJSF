@@ -19,9 +19,9 @@ public class ComunicacaoTeste5Bean implements Serializable {
     private Estudante estudante2;
 
     public void execute() {
-        System.out.println("Dentro do execute" + nome);
-        System.out.println("Dentro do execute" + sobrenome);
-        System.out.println("Dentro do execute" + estudante2.getNome());
+        System.out.println("Dentro do execute " + nome);
+        System.out.println("Dentro do execute " + sobrenome);
+        System.out.println("Dentro do execute " + estudante2.getNome());
     }
 
     public String getNome() {

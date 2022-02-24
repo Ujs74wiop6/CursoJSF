@@ -1,6 +1,7 @@
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste4Bean.class
 com\mycompany\maratonajsf\bean\flowbuilder\TesteFlowBuilderNestedBean.class
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste2Bean.class
+com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste6Bean.class
 com\mycompany\maratonajsf\bean\aplication\TesteApplicationBean.class
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoResultadoTesteBean.class
 com\mycompany\maratonajsf\bean\login\LoginBean.class
@@ -14,12 +15,14 @@ com\mycompany\maratonajsf\flowbuilder\NewPendencesFlowBuilder.class
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste5Bean.class
 com\mycompany\maratonajsf\bean\conversation\TesteConversationBean.class
 com\mycompany\maratonajsf\filter\LoginFilter.class
+com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste7Bean.class
 com\mycompany\maratonajsf\resources\JavaEE8Resource.class
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste1Bean.class
 com\mycompany\maratonajsf\bean\flowbuilder\TesteFlowBuilderBean.class
 com\mycompany\maratonajsf\bean\dependent\TesteDependentBean.class
 com\mycompany\maratonajsf\bean\session\TesteSessionBean.class
 com\mycompany\maratonajsf\model\enums\Turno.class
+com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste8Bean.class
 com\mycompany\maratonajsf\model\Estudante.class
 com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste3Bean.class
 com\mycompany\maratonajsf\bean\flow\TesteFlowBean.class
