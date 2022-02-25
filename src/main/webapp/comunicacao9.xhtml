@@ -11,15 +11,12 @@
 
     </h:head> 
     <f:metadata>
-        <f:viewAction action="#{comunicacaoTeste8Bean.init()}"/>
+        <f:viewAction action="#{comunicacaoTeste9Bean.init()}"/>
     </f:metadata>
     <body>
         <o:form includeRequestParams="true">
             <h:panelGrid columns="1">
-                <h:inputText rendered="true" value="#{comunicacaoTeste8Bean.key}"/>
-                <h:inputText rendered="true" value="#{comunicacaoTeste8Bean.value}"/>
-                <h:commandButton value="Colocar Cookies" 
-                                 action="#{comunicacaoTeste8Bean.salvarCookie()}"/>
+                <h:outputText rendered="true" value="#{comunicacaoTeste9Bean.value}"/>
             </h:panelGrid>
         </o:form>
     </body>
