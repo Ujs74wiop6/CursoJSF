@@ -4,6 +4,8 @@ C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste8Bean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\conversation\TesteConversationBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\model\Estudante.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste12Bean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\util\ApplicationMapUtil.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\view\TesteViewBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\resources\JavaEE8Resource.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\dependent\TesteDependentBean.java
@@ -12,7 +14,9 @@ C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\request\TesteRequestBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\flow\TesteFlowBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoResultadoTesteBean.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste10Bean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\JAXRSConfiguration.java
+C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\comunicacao\ComunicacaoTeste11Bean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\estudante\EstudanteRegistrarBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\session\TesteSessionBean.java
 C:\Users\Home\Documents\NetBeansProjects\MaratonaJSF\src\main\java\com\mycompany\maratonajsf\bean\aplication\TesteApplicationBean.java

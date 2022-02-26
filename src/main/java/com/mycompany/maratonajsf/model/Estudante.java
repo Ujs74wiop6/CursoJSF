@@ -33,9 +33,9 @@ public class Estudante implements Serializable {
     }
 
     public static List<Estudante> estudantesList() {
-        return asList(new Estudante("Ikki", "Fenix", 10),
+        return new ArrayList<>(asList(new Estudante("Ikki", "Fenix", 10),
                 new Estudante("Shiryu", "Dragao", 10),
-                new Estudante("Seiya", "Pegasus", 10));
+                new Estudante("Seiya", "Pegasus", 10)));
     }
 
     public Estudante(double nota2) {
