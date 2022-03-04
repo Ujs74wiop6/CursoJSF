@@ -21,6 +21,7 @@ public class Estudante implements Serializable {
     private double nota2;
     private double nota3 = 10;
     private Turno turno = Turno.MATUTINO;
+    private String email;
 
     public Estudante() {
 
@@ -90,4 +91,11 @@ public class Estudante implements Serializable {
         this.turno = turno;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
