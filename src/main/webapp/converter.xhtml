@@ -10,15 +10,16 @@
     <h:head>
     </h:head>
     <body>
-        <h:outputText value="Email"/><br/>
+        <h:outputText value="Selecione um estudante"/><br/>
         <h:form>
-            <h:inputText value="#{validatorTesteBean.estudante.email}"
-                         validator="#{validators.validateDuplicatedEmail}" 
-                         validatorMessage="Esse E-mail já existe!" 
-                         size="30"/>
-
+            <h:selectOneMenu value="#{converterTesteBean.estudante}" 
+                             converter="estudanteConverter">
+                <f:selectItems value="#{converterTesteBean.estudanteList}"
+                               var="estudante" itemLabel="#{estudante.nome}"
+                               itemValue="#{estudante}"/>
+            </h:selectOneMenu>
             <h:commandButton value="Save" 
-                             actionListener="#{converterTesteBean.save()}"/>
+                             actionListener="#{validatorTesteBean.save()}"/>
         </h:form>
     </body>
 </html>
