@@ -44,7 +44,8 @@ public class Estudante implements Serializable {
     public static List<Estudante> estudantesList() {
         return new ArrayList<>(asList(new Estudante(1, "Ikki", "Fenix", 10),
                 new Estudante(2, "Shiryu", "Dragao", 10),
-                new Estudante(3, "Seiya", "Pegasus", 10)));
+                new Estudante(3, "Shiryu", "Dragao", 10),
+                new Estudante(4, "Seiya", "Pegasus", 10)));
     }
 
     @Override
