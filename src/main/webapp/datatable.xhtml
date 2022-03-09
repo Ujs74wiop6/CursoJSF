@@ -9,6 +9,9 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
     </h:head>
+    <f:metadata>
+        <f:viewAction action="#{dataTableTesteBean.init()}"/>
+    </f:metadata>
     <body>
         <h:form>
             <h:dataTable value="#{dataTableTesteBean.estudanteList}" var="estudante">
@@ -27,6 +30,66 @@
                 <h:column>
                     <f:facet name="header">E-mail</f:facet>
                     <h:outputText value="#{estudante.email}"/>
+                </h:column>
+            </h:dataTable>
+            <h:dataTable value="#{dataTableTesteBean.estudanteSet}" var="estudante">
+                <h:column>
+                    <f:facet name="header">Nome</f:facet>
+                    <h:outputText value="#{estudante.nome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Sobrenome</f:facet>
+                    <h:outputText value="#{estudante.sobrenome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Turno</f:facet>
+                    <h:outputText value="#{estudante.turno}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">E-mail</f:facet>
+                    <h:outputText value="#{estudante.email}"/>
+                </h:column>
+            </h:dataTable>
+            <h:dataTable value="#{dataTableTesteBean.estudantesLinkedList}" var="estudante">
+                <h:column>
+                    <f:facet name="header">Nome</f:facet>
+                    <h:outputText value="#{estudante.nome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Sobrenome</f:facet>
+                    <h:outputText value="#{estudante.sobrenome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Turno</f:facet>
+                    <h:outputText value="#{estudante.turno}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">E-mail</f:facet>
+                    <h:outputText value="#{estudante.email}"/>
+                </h:column>
+            </h:dataTable>
+            <h:dataTable value="#{dataTableTesteBean.mapEstudanteList.values()}" var="estudante">
+                <h:column>
+                    <f:facet name="header">Nome</f:facet>
+                    <h:outputText value="#{estudante.nome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Sobrenome</f:facet>
+                    <h:outputText value="#{estudante.sobrenome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Turno</f:facet>
+                    <h:outputText value="#{estudante.turno}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">E-mail</f:facet>
+                    <h:outputText value="#{estudante.email}"/>
+                </h:column>
+            </h:dataTable>
+            <h:dataTable value="#{dataTableTesteBean.mapEstudanteList.keySet()}" var="string">
+                <h:column>
+                    <f:facet name="header">Chave</f:facet>
+                    <h:outputText value="#{string}"/>
                 </h:column>
             </h:dataTable>
         </h:form>

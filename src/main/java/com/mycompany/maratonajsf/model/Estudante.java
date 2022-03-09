@@ -50,8 +50,8 @@ public class Estudante implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 67 * hash + Objects.hashCode(this.id);
+        int hash = 3;
+        hash = 29 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
@@ -140,4 +140,6 @@ public class Estudante implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
