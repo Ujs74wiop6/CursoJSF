@@ -13,25 +13,66 @@
         <f:viewAction action="#{dataTableTesteBean.init()}"/>
     </f:metadata>
     <body>
+        <p:importEnum type="com.mycompany.maratonajsf.model.enums.Turno" 
+                      var="Turno"
+                      allSuffix="ALL_ENUM_VALUES"/>
         <h:form>
             <h:dataTable value="#{dataTableTesteBean.estudanteList}" var="estudante">
                 <h:column>
-                    <f:facet name="header">Nome</f:facet>
-                    <h:outputText value="#{estudante.nome}"/>
+                    <f:facet name="header">
+                        <h:commandLink actionListener="#{dataTableTesteBean.orderByNome('asc')}">
+                            Nome asc
+                        </h:commandLink>
+                        <h:commandLink actionListener="#{dataTableTesteBean.orderByNome('desc')}">
+                            Nome desc
+                        </h:commandLink>
+                    </f:facet>
+                    <h:outputText value="#{estudante.nome}" rendered="#{not estudante.editing}"/>
+                    <h:inputText value="#{estudante.nome}" rendered="#{estudante.editing}"/>
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Sobrenome</f:facet>
-                    <h:outputText value="#{estudante.sobrenome}"/>
+                    <f:facet name="header">
+                        <h:commandLink actionListener="#{dataTableTesteBean.orderBySobrenome('asc')}">
+                            Sobrenome asc
+                        </h:commandLink>
+                        <h:commandLink actionListener="#{dataTableTesteBean.orderBySobrenome('desc')}">
+                            Sobrenome desc
+                        </h:commandLink>
+                    </f:facet>
+                    <h:outputText value="#{estudante.sobrenome}" rendered="#{not estudante.editing}"/>
+                    <h:inputText value="#{estudante.sobrenome}" rendered="#{estudante.editing}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Turno</f:facet>
-                    <h:outputText value="#{estudante.turno}"/>
+                    <h:outputText value="#{estudante.turno}" rendered="#{not estudante.editing}"/>
+                    <h:selectOneMenu value="#{estudante.turno}" rendered="#{estudante.editing}">
+                        <f:selectItems value="#{Turno.ALL_ENUM_VALUES}" 
+                                       var="turno" 
+                                       itemValue="#{turno}"
+                                       itemLabel="#{turno}"/>
+                    </h:selectOneMenu>
                 </h:column>
                 <h:column>
                     <f:facet name="header">E-mail</f:facet>
-                    <h:outputText value="#{estudante.email}"/>
+                    <h:outputText value="#{estudante.email}" rendered="#{not estudante.editing}"/>
+                    <h:inputText value="#{estudante.email}" rendered="#{estudante.editing}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header"> </f:facet>
+                    <h:commandLink actionListener="#{dataTableTesteBean.remove(estudante)}" 
+                                   rendered="#{not estudante.editing}">
+                        <h:outputText value="Remover"/>
+                    </h:commandLink>
+                </h:column>
+                <h:column>
+                    <f:facet name="header"> </f:facet>
+                    <h:commandLink actionListener="#{dataTableTesteBean.edit(estudante)}" 
+                                   rendered="#{not estudante.editing}">
+                        <h:outputText value="Editar"/>
+                    </h:commandLink>
                 </h:column>
             </h:dataTable>
+            <h:commandButton value="Save" actionListener="#{dataTableTesteBean.save()}"/>
             <h:dataTable value="#{dataTableTesteBean.estudanteSet}" var="estudante">
                 <h:column>
                     <f:facet name="header">Nome</f:facet>

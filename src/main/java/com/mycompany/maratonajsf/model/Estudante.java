@@ -8,6 +8,7 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 import java.util.Objects;
+import javax.persistence.Transient;
 
 /**
  *
@@ -23,6 +24,7 @@ public class Estudante implements Serializable {
     private double nota3 = 10;
     private Turno turno = Turno.MATUTINO;
     private String email;
+    private transient boolean editing;
 
     public Estudante() {
 
@@ -50,8 +52,8 @@ public class Estudante implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 29 * hash + Objects.hashCode(this.id);
+        int hash = 7;
+        hash = 89 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
@@ -71,6 +73,19 @@ public class Estudante implements Serializable {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudante{" + "nome=" + nome + ", sobrenome=" + sobrenome + ", turno=" + turno + ", email=" + email + '}';
+    }
+
+    public boolean isEditing() {
+        return editing;
+    }
+
+    public void setEditing(boolean editing) {
+        this.editing = editing;
     }
 
     public Integer getId() {
@@ -140,6 +155,5 @@ public class Estudante implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-
 
 }
