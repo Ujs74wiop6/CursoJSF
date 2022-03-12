@@ -33,7 +33,7 @@ public class Validators implements Serializable {
             FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_ERROR,
                     "O email já existe",
                     "");
-            throw new ValidatorException(message);
+            throw new ValidatorException(message);  
         }
     }
 }
