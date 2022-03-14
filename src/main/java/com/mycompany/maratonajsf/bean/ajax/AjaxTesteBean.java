@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import javax.faces.context.FacesContext;
 import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
@@ -25,7 +26,8 @@ public class AjaxTesteBean implements Serializable {
     private String animeSelecionado;
     private String personagemSelecionado;
 
-    {
+    public void init() {
+        System.out.println("entrou");
         animesPersonagensMap = new TreeMap<>();
         animesPersonagensMap.put("Hellsing", Arrays.asList("Alucard", "Seras", "Akexander"));
         animesPersonagensMap.put("Attack on Titan", Arrays.asList("Eren", "Mikasa", "Armin"));

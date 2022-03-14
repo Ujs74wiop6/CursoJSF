@@ -27,7 +27,7 @@ public class Validators implements Serializable {
 
     public void validateDuplicatedEmail(FacesContext fc, UIComponent uic, Object t)
             throws ValidatorException {
-        System.out.println(loginBean.getLanguage());
+//        System.out.println(loginBean.getLanguage());
         String email = (String) t;
         if (emailDB.contains(email)) {
             FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_ERROR,

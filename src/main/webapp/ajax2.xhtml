@@ -12,13 +12,19 @@
     </h:head>
     <h:body>
         <p:messages id="messages"/>
+        <h:outputText value="é uma requisição AJAX? #{facesContext.postback}" id="postback"/>
+        <!--<f:event type="preRenderView" listener="#{ajaxTesteBean.init()}"/>-->
+        <f:metadata>
+            <f:viewAction action="#{ajaxTesteBean.init()}"/>
+        </f:metadata>
         <h:form id="form">
             <h:panelGrid columns="1">
                 <h:inputText value="#{ajaxTesteBean.email}" id="email"
-                             validator="#{validators.validateDuplicatedEmail}" rendered="true">
-                    <f:ajax/>
+                             validator="#{validators.validateDuplicatedEmail}" required="true">
+                    <p:ajax event="blur" process="@this email" rendered="postback" update="messages"/>
                 </h:inputText>
                 <h:inputText value="#{ajaxTesteBean.nome}" id="nome" required="true">
+                    <p:ajax event="blur" process="@this nome" rendered="postback" update="messages"/>
                 </h:inputText>
                 <h:commandButton value="Enviar"/>
             </h:panelGrid>
