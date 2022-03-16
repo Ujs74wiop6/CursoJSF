@@ -18,7 +18,12 @@ public class Html5TesteBean implements Serializable {
     private Map<String, String> attributes = new HashMap<>();
 
     public void init() {
+        attributes.put("type", "email");
+        attributes.put("placeholder", "Digite o seu email");
+    }
 
+    public void salvarEmail() {
+        System.out.println(email);
     }
 
     public String getEmail() {

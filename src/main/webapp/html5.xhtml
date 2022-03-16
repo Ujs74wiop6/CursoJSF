@@ -6,15 +6,39 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:of="http://omnifaces.org/functions"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Page html5</title>
     </h:head>
     <h:body>
         <p:messages id="messages"/>
+        <f:metadata>
+            <f:viewAction action="#{html5TesteBean.init()}"/>
+        </f:metadata>
         <h:form id="form">
             <h:panelGrid columns="1">
-                <h:inputText value="#{html5TesteBean.email}"/>
+
+                <h:inputText value="#{html5TesteBean.email}" 
+                             pt:placeholder="Digite o seu email" 
+                             pt:type="email"/>
+
+                <h:inputText value="#{html5TesteBean.email}">
+                    <f:passThroughAttribute name="type" value="email"/>
+                    <f:passThroughAttribute name="placeholder" value="Digite o seu email"/>
+                </h:inputText>
+
+                <h:inputText value="#{html5TesteBean.email}">
+                    <f:passThroughAttributes value="#{html5TesteBean.attributes}"/>
+                </h:inputText>
+                
+                <h:inputText value="#{html5TesteBean.email}">
+                    <f:passThroughAttributes value="#{{'placeholder': 'Digite o seu email',
+                                                      'typo': 'email'}}"/>
+                </h:inputText>
+
+                <input type="email" placeholder="Digite o seu email"/>
+
             </h:panelGrid>
         </h:form>
     </h:body>
