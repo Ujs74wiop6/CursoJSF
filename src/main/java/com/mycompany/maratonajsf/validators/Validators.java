@@ -21,7 +21,6 @@ import javax.inject.Named;
 public class Validators implements Serializable {
 
     private List<String> emailDB = asList("fabricio.tiago@gmail.com.br", "contato@devdojo.coom.br");
-
     @Inject
     private LoginBean loginBean;
 
@@ -33,7 +32,7 @@ public class Validators implements Serializable {
             FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_ERROR,
                     "O email já existe",
                     "");
-            throw new ValidatorException(message);  
+            throw new ValidatorException(message);
         }
     }
 }

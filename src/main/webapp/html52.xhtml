@@ -9,16 +9,28 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:p="http://primefaces.org/ui">
-    <head>
+    <head jsf:id="head">
         <title>Page html5</title>
     </head>
-    <bady>
-        <h>Formulário:</h>
-        <br/>
+    <bady jsf:id="body">
         <form jsf:id="form">
-            Email - <input jsf:id="email" type="email" jsf:value="#{html5TesteBean.email}"/>
+            <p:messages id="messages"/>
+            Email:<input jsf:id="email" required="required" type="email" 
+                         jsf:value="#{html5TesteBean.email}"
+                         jsf:validator="#{validators.validateDuplicatedEmail}"/>
             <br/>
-            <button jsf:actionListener="#{html5TesteBean.salvarEmail}">
+            URL:<input jsf:id="url" required="required" type="url" 
+                       jsf:value="#{html5TesteBean.url}"/>
+            <br/>
+            Number:<input jsf:id="number" required="required" type="number" 
+                          jsf:value="#{html5TesteBean.numero}"/>
+            <br/>
+            <h:inputText value="#{html5TesteBean.nome}">
+                <f:ajax event="blur" listener="#{html5TesteBean.toUpperCaseNome()}" 
+                        render="@this"/>
+            </h:inputText>
+            <br/>
+            <button jsf:actionListener="#{html5TesteBean.salvar}">
                 Salvar
             </button>
         </form>
