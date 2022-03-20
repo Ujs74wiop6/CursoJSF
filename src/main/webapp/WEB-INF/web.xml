@@ -21,7 +21,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>faces/beanvalidation.xhtml</welcome-file>
+        <welcome-file>faces/viewexpired.xhtml</welcome-file>
     </welcome-file-list>
     <context-param>
         <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
@@ -51,4 +51,30 @@
         <param-name>images.location</param-name>
         <param-value>C:\var</param-value>
     </context-param>
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>server</param-value>
+    </context-param>
+    <error-page>
+        <exception-type>javax.faces.application.ViewExpiredException</exception-type>
+        <location>/expirederror.xhtml</location>
+    </error-page>
+    <!--    <context-param>
+        <param-name>com.sun.faces.numberOfLogicalViews</param-name>
+        <param-value>2</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.sun.faces.numberOfViewsInSession</param-name>
+        <param-value>4</param-value>
+    </context-param>-->
+    <env-entry>
+        <env-entry-name>jsf/ClientSideSecretKey</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>AQnpRx9ytgsD1rEsfzoymA==</env-entry-value>
+    </env-entry>
+    <!--    xx2yDKOazQpXrRD5xzOgagec+CGCS79aq/nsvj3DheI=-->
+    <!--    <context-param>
+        <param-name>javax.faces.PARTIAL_STATE_SAVING</param-name>
+        <param-value>false</param-value>
+    </context-param>-->
 </web-app>
