@@ -16,7 +16,12 @@ public class ViewExpiredTesteBean implements Serializable {
     private String nome;
 
     public void save() {
-        System.out.println("nome ->" + nome);
+        if (nome != null) {
+            System.out.println("nome -> " + nome + " SALVO COM SUCESSO!");
+        } else {
+            System.out.println("nome não pode estar vazio");
+            return;
+        }
     }
 
     public String invalidateSassion() {

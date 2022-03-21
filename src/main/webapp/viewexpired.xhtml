@@ -9,11 +9,18 @@
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Page ViewExpired</title>
+        <h:outputStylesheet library="default" name="css/style.css"/>
+        <h:outputScript name="js/main.js"/>
+        <!--[localePrefix/][libraryName/][libraryVersion/] resourceName[/resourceVersion]-->
+        <!--\d+(_\d+)* 1_0, 1_1, 1_2, 1_2_1 ...-->
     </h:head>
     <h:body>
         <f:view>
             <h:form id="form">
                 <h:panelGrid columns="1">
+                    <h:inputText value="#{viewExpiredTesteBean.nome}"/>
+                    <h:commandButton value="Save" action="#{viewExpiredTesteBean.save()}" styleClass="btn"/>
+                    <h:graphicImage library="default" name="img/c.png"/>
                     <h:commandButton value="Invalidar Ssessão" action="#{viewExpiredTesteBean.invalidateSassion()}"/>
                 </h:panelGrid>
             </h:form>

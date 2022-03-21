@@ -7,17 +7,14 @@
       xmlns:of="http://omnifaces.org/functions"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-    <h:head>
-        <title>Ops!</title>
-        <h:body>
-            <f:view>
-                <div>
-                    Sua Sessão expirou!
-                    <br/>
-                    Volte para o inicio
-                </div>
-            </f:view>
-        </h:body>
-    </h:head>
+    <h:head><title>Expired Page</title></h:head>
+    <h:body>
+        <h3>
+            Sua Sessão expirou!<br/>
+            <p>
+                <a href="/MaratonaJSF-1.0-SNAPSHOT/faces/login.xhtml">Voltar para o inicio!</a>
+            </p>   
+        </h3>
+    </h:body>
 </html>
 

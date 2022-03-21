@@ -7,22 +7,17 @@
       xmlns:of="http://omnifaces.org/functions"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-    <h:head>
-        <title>Page Ajax</title>
-    </h:head>
+    <h:head><title>Page Ajax</title></h:head>
     <h:body>
         <p:messages id="messages"/>
         <h:outputText value="é uma requisição AJAX? #{facesContext.postback}" id="postback"/>
         <h:form id="form">
             <h:panelGrid columns="1">
-
                 <h:inputText value="#{ajaxTesteBean.nome}" id="nome" required="true">
-                    <f:ajax event="keyup" 
-                            listener="#{ajaxTesteBean.toUpperCaseNome()}" 
+                    <f:ajax event="keyup" listener="#{ajaxTesteBean.toUpperCaseNome()}" 
                             render="nomeOut" delay="1000"/>
                 </h:inputText>
                 <h:outputText id="nomeOut" value="#{ajaxTesteBean.nome}"/>
-
                 <h:commandButton value="Enviar"/>
             </h:panelGrid>
         </h:form>
