@@ -5,7 +5,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:of="http://omnifaces.org/functions"
-      xmlns:dc="http://devdojo.com.br/functions"
+      xmlns:df="http://devdojo.com.br/functions"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
     <h:head><title>Tag-Lib Function</title></h:head>
@@ -14,8 +14,8 @@
             <h:dataTable  value="#{taglibFunctionTestBean.names}" var="name">
                 <h:column>
                     <f:facet name="header">Names</f:facet>
-                    <h:outputText value="#{dc:captilize(name)}"/>
-                </h:column>
+                    <h:outputText value="#{df:capitalize(name)}"/>
+                </h:column> 
             </h:dataTable>
         </h:form>
     </h:body>
